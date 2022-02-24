@@ -23,8 +23,37 @@ main{
     letter-spacing: 0.2em;
     font-size: 0.5em;
     font-weight: bolder;
-    text-transform: uppercase;
 }
+.container__info{
+    margin-left: 1em;
+    padding-top: 1em;
+}
+.block__info{
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    padding-bottom: 2em;
+}
+
+.circle__img{
+    position: absolute;
+    right: 10px;
+    z-index: 0;
+    background-color: white;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    transform: translateY(-4em);
+}
+.block__img{
+    text-align: right;
+    transform: translate(-0.5em, -2.5em)
+}
+.img{
+    width: 150px;
+    margin-right: 15px;
+    padding: 15px;
+}
+
 .text__city--vmin{
     font-size: 10vmin;
     font-weight: lighter;
@@ -32,4 +61,23 @@ main{
 .text__temp--vmin{
     font-size: 15vmin;
     font-weight: bolder;
+}
+.text--up{
+    text-transform: uppercase;
+}
+
+.text--expl{
+    background-color: black;
+    color: white;
+    padding: 1em 1em;
+}
+
+@media (orientation: landscape) {
+    .block__img{
+        text-align: right;
+        transform: translate(-0.5em, -5.5em)
+    }
+    .circle__img{
+        transform: translateY(-7em);
+    }
 }
