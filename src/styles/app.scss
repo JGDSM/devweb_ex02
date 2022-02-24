@@ -3,9 +3,33 @@
 @import 'utils/variables';
 @import 'components/type';
 
+h1, h2, h3{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+
 main{
     background-image: url(../assets/images/rain_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+.header__name{
+    background-color: rgba(256, 256, 256, 0.7);
+    padding: 10px 0;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 0.5em;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.text__city--vmin{
+    font-size: 10vmin;
+    font-weight: lighter;
+}
+.text__temp--vmin{
+    font-size: 15vmin;
+    font-weight: bolder;
 }
